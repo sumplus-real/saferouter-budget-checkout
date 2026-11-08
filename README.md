@@ -38,6 +38,8 @@ This comparison uses the same inputs and local model in both runs. The direct ar
 
 ## Connect PayPal Sandbox
 
+For a clean-room test from your own Sandbox account, use the [judging guide](JUDGING.md). The [runtime notices](THIRD-PARTY-NOTICES.md) list separately installed components.
+
 Use your own Sandbox Merchant app and a separate personal Sandbox buyer. The [PayPal developer guide](https://developer.paypal.com/sandbox-testing/accounts) explains both test account types. Open **Apps & Credentials → Sandbox** in the Developer Dashboard. Store the Merchant app credentials in your private local environment.
 
 ```sh
