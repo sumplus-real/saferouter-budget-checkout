@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>SafeRouter Receipt Verifier</title>
+<link rel="stylesheet" href="/style.css"><script type="module" src="/verifier-ui.mjs"></script></head>
+<body><header><div class="bar"><a class="brand" href="/">SUMPLUS <span> / </span> SAFEROUTER</a><a href="/">Back to checkout ↗</a></div></header>
+<main><section class="hero"><p class="eyebrow">INDEPENDENT RECOMPUTATION</p><h1>Receipt Verifier</h1>
+<p class="intro">Check the issuer signature, input and card digests, line prices, and recorded payment. This page verifies locally without calling a payment or checkout API.</p></section>
+<section class="panel"><div class="section-head"><span class="step">01</span><h2>Provide receipt and issuer key</h2></div>
+<p class="muted">Obtain the public key from an independently trusted issuer channel.</p>
+<p><label for="receipt">Signed receipt</label> <input id="receipt" type="file" accept=".json,application/json"></p>
+<p><label for="key">Trusted key file</label> <input id="key" type="file" accept=".txt,text/plain"></p>
+<textarea id="trusted" rows="2" aria-label="Trusted public key" placeholder="Or paste the trusted public key"></textarea>
+<div class="actions"><button class="primary" id="verify">Verify and recompute</button><button id="tamper">Test a changed line price</button></div>
+<p id="result" role="status"></p></section></main></body></html>

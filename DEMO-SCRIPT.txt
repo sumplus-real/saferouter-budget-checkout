@@ -1,0 +1,26 @@
+SafeRouter Budget Checkout
+English recording script · Target 2 minutes 30 seconds
+
+00:00–00:22 · Quote
+On screen: ten synthetic storefront records and the frozen quote.
+“Preparing a batch of English product cards can leave a merchant paying for output they cannot use. SafeRouter sets a fifty-cent ceiling for ten cards. Each card that passes the agreed checks costs five cents.”
+
+00:22–00:47 · Buyer approval
+On screen: PayPal Sandbox approval, then the app’s authorization readback. Hide the buyer email and any account details.
+“The buyer approves the ceiling once in PayPal Sandbox. The seller reads back the authorization before starting the batch.”
+
+00:47–01:19 · Delivery and repair
+On screen: show the local model label. Open one repaired row and one zero-charge row. Keep the controlled fault label visible if using it.
+“A local model drafts the cards. SafeRouter checks each product’s identity, specification, price, inventory, and source fields. A failed draft gets one repair. This run uses labeled test faults to show a repair and cards that remain unbillable.”
+
+01:19–01:45 · Final capture
+On screen: show the actual accepted count, final charge, and PayPal authorization status returned by the app. Use these words only after observing the real Sandbox run.
+“SafeRouter totals the accepted cards and asks PayPal to capture just that amount. Here the confirmation shows [observed count] cards for [observed amount] against the fifty-cent ceiling.”
+
+01:45–02:12 · Receipt
+On screen: download the receipt and key, open the separate verifier, verify, and change a line price.
+“The verifier checks the signature and recomputes the fee from the individual line items. Changing a line price invalidates the receipt.”
+
+02:12–02:30 · Zero-charge batch
+On screen: show a second Sandbox order with the void readback and no capture. Use this narration only after observing the real Sandbox run.
+“In the separate all-failed run, SafeRouter voided the authorization and confirmed there was no capture. The merchant can inspect the rejection reasons and start over with corrected product data.”

@@ -1,0 +1,12 @@
+[
+  {"id":"CUP-A","name":"Clay Travel Cup","specification":{"label":"Capacity","value":350,"unit":"mL"},"priceCents":1490,"stock":24,"prohibited":["shatterproof"]},
+  {"id":"TOTE-B","name":"Canvas Market Tote","specification":{"label":"Width","value":38,"unit":"cm"},"priceCents":1800,"stock":13,"prohibited":["waterproof"]},
+  {"id":"BOARD-C","name":"Bamboo Prep Board","specification":{"label":"Length","value":29,"unit":"cm"},"priceCents":2200,"stock":8,"prohibited":["antibacterial"]},
+  {"id":"LAMP-D","name":"Reading Lamp","specification":{"label":"Rated Power","value":8,"unit":"W"},"priceCents":3200,"stock":5},
+  {"id":"POT-E","name":"Glazed Plant Pot","specification":{"label":"Diameter","value":18,"unit":"cm"},"priceCents":2590,"stock":11},
+  {"id":"BAG-F","name":"Ridge Daypack","specification":{"label":"Capacity","value":16,"unit":"L"},"priceCents":4200,"stock":10},
+  {"id":"JAR-G","name":"Glass Pantry Jar","specification":{"label":"Capacity","value":900,"unit":"mL"},"priceCents":1190,"stock":0,"availability":"out_of_stock"},
+  {"id":"TOOL-H","name":"Steel Garden Trowel","specification":{"label":"Length","value":27,"unit":"cm"},"priceCents":1350,"stock":12},
+  {"id":"TRAY-I","name":"Ashwood Serving Tray","specification":{"label":"Width","value":32,"unit":"cm"},"priceCents":2750,"stock":6},
+  {"id":"CASE-J","name":"Felt Desk Pouch","specification":{"label":"Width","value":22,"unit":"cm"},"priceCents":1090,"stock":9}
+]

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeRouter Budget Checkout</title><link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.mjs"></script>
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="/">SUMPLUS <span> / </span> SAFEROUTER</a><a href="/verifier">Receipt verifier ↗</a></div></header>
+<main>
+<section class="hero">
+<p class="eyebrow">PRODUCT CARD WORKBENCH</p><h1>Budget Checkout</h1>
+<p class="intro">Turn product records into English storefront cards. Approve a ceiling once and pay only for cards that pass the agreed checks.</p>
+<div class="tags" id="modes"></div>
+</section>
+<section class="metrics" aria-label="Checkout totals">
+<div><p>Approval ceiling</p><strong id="cap">—</strong></div>
+<div><p>Cards accepted</p><strong id="count">—</strong></div>
+<div><p>Final charge</p><strong id="total">—</strong></div>
+</section>
+<div class="grid">
+<section class="panel">
+<div class="section-head"><span class="step">01</span><h2>Product records</h2></div>
+<p class="muted">Upload or paste up to ten JSON records. Each accepted card costs $0.05.</p>
+<div class="actions"><button id="sample">Load sample</button><label class="button" for="file">Upload JSON</label><input id="file" type="file" accept=".json,application/json" hidden></div>
+<label class="sr-only" for="input">Product records JSON</label><textarea id="input" rows="8" spellcheck="false" placeholder="Paste a JSON array here"></textarea>
+<label class="check"><input type="checkbox" id="faults"> Add labeled test faults to model output</label>
+<button class="primary" id="quote">Freeze quote</button>
+</section>
+<section class="panel checkout">
+<div class="section-head"><span class="step">02</span><h2>Checkout</h2></div>
+<p id="status" aria-live="polite">Freeze a quote to begin.</p>
+<dl id="facts"></dl>
+<div class="actions">
+<button id="order" hidden class="primary">Create approval</button>
+<a id="approve" hidden class="button primary" rel="noopener noreferrer">Open PayPal Sandbox</a>
+<button id="run" hidden class="primary">Verify approval and run</button>
+<button id="cancel" hidden>Cancel batch</button>
+</div>
+<div class="actions">
+<button id="receipt" hidden class="primary">Download signed receipt</button>
+<button id="key" hidden>Download verifier key</button>
+<button id="cards" hidden>Download accepted cards</button>
+</div>
+<p class="muted">The ceiling is an authorization. PayPal determines when any unused hold clears.</p>
+</section>
+</div>
+<section class="panel rows">
+<div class="section-head"><span class="step">03</span><h2>Delivery ledger</h2></div>
+<p class="muted">Each item shows its source checks, model attempts and fee. Review prose for naturalness and claims before publishing.</p>
+<div id="rows"><p class="muted">Your batch will appear here.</p></div>
+</section>
+<p class="error" id="error" role="alert"></p>
+</main>
+</body></html>

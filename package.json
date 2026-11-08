@@ -1,0 +1,14 @@
+{
+  "name": "saferouter-budget-checkout",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20.19" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.mjs",
+    "test": "node --test",
+    "sandbox:gate": "node --env-file-if-exists=.env scripts/sandbox-gate.mjs",
+    "verify": "node scripts/verify.mjs",
+    "baseline": "node --env-file-if-exists=.env scripts/baseline.mjs"
+  }
+}
